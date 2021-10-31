@@ -8,3 +8,45 @@ body {
     margin: 0;
   }
   
+  .list {
+    list-style: none;
+  }
+  
+  img {
+    display: block;
+  }
+  
+  h1,
+  h2,
+  h3,
+  p,
+  ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .portfolio-items a {
+    text-decoration: none;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: baseline;
+  }
+  .hiden-element {
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+  }
+  
