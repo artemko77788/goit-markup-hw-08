@@ -29,68 +29,96 @@
             <a href="./index.html" lang="en" class="logo"
               ><span class="logo__text">Web</span>Studio</a
             >
-            <button type="button" class="menu-button" data-menu-button>
+            <button
+              type="button"
+              class="menu-button js-open-menu"
+              data-menu-button
+            >
               <svg
                 width="40"
                 height="40"
                 aria-label="Переключатель мобильного меню"
               >
-                <use class="icon-menu" href="./images/icons.svg#menu"></use>
+                <use class="menu-button__icon-menu" href="./images/icons.svg#menu"></use>
               </svg>
             </button>
-            <div class="menu-container" id="menu-container" data-menu>
-              <button type="button" class="menu-button menu-button__cross" data-menu-button>
-                <svg
-                  width="40"
-                  height="40"
-                  aria-label="Переключатель мобильного меню"
+            <div
+              class="menu-container js-menu-container"
+              id="menu-container"
+              data-menu
+            >
+              <div class="menu-container__wrap">
+                <button
+                  type="button"
+                  class="menu-button js-close-menu"
+                  data-menu-button
                 >
-                  <use class="icon-cross" href="./images/icons.svg#cross"></use>
-                </svg>
-              </button>
-              <ul class="list main-nav">
-                <li class="main-nav__item">
-                  <a
-                    href="./index.html"
-                    class="main-nav__link main-nav__current"
-                    >Студия</a
+                  <svg
+                    width="40"
+                    height="40"
+                    aria-label="Переключатель мобильного меню"
                   >
-                </li>
-                <li class="main-nav__item">
-                  <a href="./portfolio.html" class="main-nav__link"
-                    >Портфолио</a
-                  >
-                </li>
-                <li class="main-nav__item">
-                  <a href="" class="main-nav__link">Контакты</a>
-                </li>
-              </ul>
+                    <use
+                      class=" menu-button__icon-cross"
+                      href="./images/icons.svg#cross"
+                    ></use>
+                  </svg>
+                </button>
+                <ul class="list main-nav">
+                  <li class="main-nav__item">
+                    <a
+                      href="./index.html"
+                      class="main-nav__link "
+                      >Студия</a
+                    >
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="./portfolio.html" class="main-nav__link main-nav__current"
+                      >Портфолио</a
+                    >
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="" class="main-nav__link">Контакты</a>
+                  </li>
+                </ul>
 
-              <ul class="list connect-header">
-                <li class="connect-header__item">
-                  <a
-                    href="mailto:info@devstudio.com"
-                    class="connect-header__link"
-                  >
-                    <svg class="connect-header__mail">
-                      <use href="./images/icons.svg#icon-mail"></use>
-                    </svg>
-                    info@devstudio.com</a
-                  >
-                </li>
-                <li class="connect-header__item">
-                  <a href="tel:+380961111111" class="connect-header__link"
-                    ><svg class="connect-header__phone">
-                      <use href="./images/icons.svg#icon-smartphone"></use></svg
-                    >+38 096 111 11 11</a
-                  >
-                </li>
-              </ul>
+                <ul class="list connect-header">
+                  <li class="connect-header__item">
+                    <a
+                      href="tel:+380961111111"
+                      class="connect-header__link connect-header__link-blue"
+                      ><svg class="connect-header__icon-phone">
+                        <use
+                          href="./images/icons.svg#icon-smartphone"
+                        ></use></svg
+                      >+38 096 111 11 11</a
+                    >
+                  </li>
+                  <li class="connect-header__item">
+                    <a
+                      href="mailto:info@devstudio.com"
+                      class="connect-header__link connect-header__link-size"
+                    >
+                      <svg class="connect-header__icon-mail">
+                        <use href="./images/icons.svg#icon-mail"></use>
+                      </svg>
+                      info@devstudio.com</a
+                    >
+                  </li>
+                </ul>
+                <ul class=" list menu-container__social-list">
+                  <li class="menu-container__social-item"><a href="/" class="menu-container__social-link">Instagram</a></li>
+                  <li class="menu-container__social-item"><a href="/" class="menu-container__social-link">Twitter</a></li>
+                  <li class="menu-container__social-item"><a href="/" class="menu-container__social-link">Facebook</a></li>
+                  <li class="menu-container__social-item"><a href="/" class="menu-container__social-link">LinkedIn</a></li>
+                </ul>
+              </div>
             </div>
           </nav>
         </div>
       </div>
     </header>
+
     <main>
       <!-- Portfolio buttons -->
 
@@ -123,7 +151,7 @@
           </ul>
           <!-- Portfolio imagts and  portfolio-card__descriptions -->
           <h1 class="hidden-element">Примеры работ</h1>
-          <ul class="list portfolio-card flex">
+          <ul class="list portfolio-card ">
             <li class="portfolio-card__item">
               <a href="./portfolio.html">
                 <div class="card-overflow">
@@ -363,7 +391,7 @@
     </main>
 
     <footer class="footer-bg">
-      <div class="container flex">
+      <div class="container">
         <div class="wrap-address">
           <a href="./index.html" lang="en" class="logo fotter-logo"
             ><span class="logo__text">Web</span>Studio
@@ -388,11 +416,15 @@
         </div>
         <div class="footer-join">
           <h3 class="footer-join__text">присоединяйтесь</h3>
-          <ul class="list flex">
+          <ul class="social list flex">
             <li class="social__item">
               <a href="" class="social__link footer-icon-bg">
                 <svg class="social__icon">
-                  <use href="./images/icons.svg#icon-instagram"></use>
+                  <use
+                    href="./images/icons.svg#icon-instagram"
+                    width="20"
+                    height="20"
+                  ></use>
                 </svg>
               </a>
             </li>
@@ -432,11 +464,11 @@
           </ul>
         </div>
         <!-- Подпишитесь на рассылку -->
-        <div class="sign-us flex">
+        <div class="sign-us">
           <label for="email-footer" class="sign-us__text"
             >Подпишитесь на рассылку</label
           >
-          <form class="flex">
+          <form class="">
             <input
               type="email"
               class="sign-us__input"
