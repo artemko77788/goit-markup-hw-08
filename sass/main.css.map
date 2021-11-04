@@ -1,0 +1,23 @@
+{
+    "version": 3,
+    "mappings": "AIAA,AAAA,KAAK,CAAC;EACF,WAAW,EHKH,OAAO,EAAE,UAAU;EGJ3B,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;EAChB,KAAK,EHLY,OAAO;EGMxB,eAAe,EAAE,IAAI;EACrB,YAAY,EAAE,IAAI;CAYnB;;AAnBH,AASI,KATC,AASA,MAAM,EATX,KAAK,AAUA,MAAM,CAAC;EACN,MAAM,EAAE,OAAO;CAChB;;AAZL,AAcI,KAdC,CAcD,WAAW,CAAC;EACV,KAAK,EHbI,OAAO;CGcjB;;AAKH,AAAA,YAAY,CAAA;EACV,OAAO,EAAE,YAAY;EACrB,KAAK,EHpBK,OAAO;EGqBjB,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,CAAC;EACb,YAAY,EAAE,CAAC;CAChB",
+    "sources": [
+        "main.scss",
+        "utils/_variables.scss",
+        "base/_common.scss",
+        "components/_header-underline.scss",
+        "components/_logo.scss",
+        "components/_header.scss",
+        "components/_hero.scss",
+        "components/_modal.scss",
+        "components/_our-features.scss",
+        "components/_what-we-do.scss",
+        "components/_team.scss",
+        "components/_social-icon.scss",
+        "components/_customars.scss",
+        "components/_footer.scss",
+        "components/_portfolio.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

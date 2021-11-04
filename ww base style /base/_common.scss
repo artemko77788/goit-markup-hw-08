@@ -7,10 +7,11 @@ body {
     letter-spacing: 0.03em;
     margin: 0;
   }
-
+  
   .list {
     list-style: none;
   }
+  
   img {
     display: block;
   }
@@ -24,40 +25,27 @@ body {
     margin-bottom: 0;
     padding: 0;
   }
-.flex{
-  display: flex;
-}
 
+  
   .container {
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-
-
-    @media screen and (min-width: 480px) {
-       width: 480px;
-        
-    }
   }
-
   .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-
-
-    @media screen and (min-width: 480px) {
-    
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
-
-  }
-
   .portfolio-items a {
     text-decoration: none;
   }
-
+  
+ 
   .hiden-element {
     visibility: hidden;
     pointer-events: none;
     position: absolute;
   }
+  

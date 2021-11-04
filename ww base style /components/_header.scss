@@ -1,18 +1,16 @@
-.main-nav {
-margin-bottom: 302px;
-  
+
+.main-nav{
   .main-nav__link {
     text-decoration: none;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: $primary-text-color;
-
+    padding: 32px 0;
     display: inline-block;
-    font-size: 40px;
+
     transition: color $duration $cubic;
   }
-
   &__link:hover,
   &__link:focus {
     color: $accent-color;
@@ -21,11 +19,9 @@ margin-bottom: 302px;
   .main-nav__item {
     position: relative;
   }
-
   .main-nav__item:not(:last-child) {
-    margin-bottom: 32px;
+    margin-right: 50px;
   }
-
   .main-nav__link::after {
     content: "";
     background: $accent-color;
@@ -36,15 +32,8 @@ margin-bottom: 302px;
     bottom: 0;
     left: 0;
     opacity: 0;
-    display: none;
+  }
 
-  
-  
-@media screen and(min-width: 768px) {
-  display: inherit;
-  
-}
-}
   .main-nav__current::after {
     opacity: 1;
   }
@@ -55,58 +44,36 @@ margin-bottom: 302px;
 }
 
 .connect-header {
- 
-  margin-bottom: 64px;
+  margin-left: auto;
 
   .connect-header__link {
-    text-decoration: none;
-    font-size: 34px;
-    font-weight: 500;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
     color: $secondery-text-color;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding: 32px 0;
     transition: color $duration $duration;
   }
-
-  .connect-header__link-blue {
-    color: $accent-color;
-    margin-bottom: 32px;
-  }
-
-  .connect-header__link-size {
-    font-size: 28px;
-    line-height: 1.18;
-  }
-
   &__link:hover,
   &__link:focus {
     color: $accent-color;
   }
-
   .connect-header__item:not(:last-child) {
-    margin-bottom: 32px;
+    margin-right: 50px;
   }
-
-  .connect-header__icon-mail {
+  .connect-header__mail {
     width: 16px;
     height: 12px;
     margin-right: 10px;
     fill: currentColor;
-
-
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
   }
-  .connect-header__icon-phone {
+  .connect-header__phone {
     width: 10px;
     height: 16px;
     margin-right: 10px;
     fill: currentColor;
-
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
   }
 }
-

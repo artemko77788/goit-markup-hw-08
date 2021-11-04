@@ -1,0 +1,39 @@
+.customers{
+  .customers__item:not(:last-child) {
+        margin-right: 30px;
+      }
+
+
+
+  
+  .customers__link {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    color: #afb1b8;
+    transition: color $duration $cubic,
+      border $duration $cubic;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+    border: 1px solid $accent-color;
+  }
+  
+
+
+  .customers__icon {
+    display: inline-block;
+    border: none;
+    fill: currentColor;
+  }
+  
+}
+  
+
+ 

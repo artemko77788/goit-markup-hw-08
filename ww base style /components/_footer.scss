@@ -2,12 +2,10 @@
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  text-align: center;
 }
 
 .wrap-address {
-    margin-bottom: 60px;
-  
+  margin-right: 70px;
 }
 
 .address {
@@ -20,7 +18,7 @@
   .address__item:not(:last-child) {
     margin-bottom: 9px;
   }
-  .address__link {
+  .address__link{
     font-weight: 400;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
@@ -30,11 +28,15 @@
   &__link:focus {
     color: $accent-color;
   }
+
 }
+
+
+
 
 /* footert join us */
 
-.footer-join {
+.footer-join{
   .footer-join__text {
     color: $white-color;
     text-transform: uppercase;
@@ -44,45 +46,47 @@
     letter-spacing: 0.03em;
     margin-bottom: 20px;
   }
+
 }
 
+
+
+
+
+
+
 .sign-us {
-   
-
-
+  flex-flow: column;
+  margin-left: 93px;
   .sign-us__text {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
-    display: inline-block;
     color: $white-color;
     margin-bottom: 20px;
-
   }
-  .sign-us__input {
-    
+  .sign-us__input{
+    color: $white-color;
     padding: 15px 16px;
-    margin-bottom: 20px;
-
+  
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
-    width: 100%;
+    width: 358px;
     height: 50px;
+  
     color: $white-color;
   }
 
   .sign-us__btn {
-    margin: 0 auto;
-      
     background: $accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     min-width: 200px;
     height: 50px;
+    margin-left: 12px;
     border: none;
     color: $white-color;
     font-size: 16px;
@@ -99,4 +103,11 @@
     height: 24px;
     margin-left: 10px;
   }
+  
+
 }
+
+
+
+
+
