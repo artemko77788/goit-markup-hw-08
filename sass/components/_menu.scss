@@ -50,6 +50,18 @@
   transition: transform $duration $cubic;
   background-color: $white-color;
 
+  @media screen and (min-width: 768px) {
+    transform: translateX(0);
+    background-color: transparent;
+    position: unset;
+    padding: 0;
+    width: unset;
+    height: unset;
+    display: flex;
+  }
+
+
+
   &.is-open {
     transform: translateX(0);
   }
@@ -59,7 +71,15 @@
     position: relative;
     margin-right: auto;
     margin-left: auto;
+
+    @media screen and (min-width: 768px){
+    
+      display: flex;
+      margin: 0;
+    }
   }
+
+ 
 }
 
 .menu-container__social-list {
