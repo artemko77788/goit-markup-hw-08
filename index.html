@@ -19,7 +19,7 @@
 
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body>
+  <body >
     <!-- Шапка страниц-->
 
     <header class="header">
@@ -258,7 +258,7 @@
       <section class="section section__what-we-do">
         <div class="container">
           <h2 class="what-we-do__title">Чем мы занимаемся</h2>
-          <ul class="list what-we-do">
+          <ul class="list what-we-do flex">
             <li class="what-we-do__item">
               <img
                 src="./images/what-we-do/first_img.jpg"
@@ -577,76 +577,78 @@
 
     <footer class="footer-bg">
       <div class="container">
-        <div class="wrap-address">
-          <a href="./index.html" lang="en" class="logo fotter-logo"
-            ><span class="logo__text">Web</span>Studio
-          </a>
-
-          <address class="address">
-            <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
-
-            <ul class="list contact-footer">
-              <li class="address__item">
-                <a href="mailto:info@devstudio.com" class="address__link"
-                  >info@devstudio.com</a
-                >
+        <div class="wrap-address-join">
+          <div class="wrap-address">
+            <a href="./index.html" lang="en" class="logo fotter-logo"
+              ><span class="logo__text">Web</span>Studio
+            </a>
+  
+            <address class="address">
+              <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
+  
+              <ul class="list contact-footer">
+                <li class="address__item">
+                  <a href="mailto:info@devstudio.com" class="address__link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a href="tel:+380961111111" class="address__link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-join">
+            <h3 class="footer-join__text">присоединяйтесь</h3>
+            <ul class="social list flex">
+              <li class="social__item">
+                <a href="" class="social__link footer-icon-bg">
+                  <svg class="social__icon">
+                    <use
+                      href="./images/icons.svg#icon-instagram"
+                      width="20"
+                      height="20"
+                    ></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a href="tel:+380961111111" class="address__link"
-                  >+38 096 111 11 11</a
-                >
+              <li class="social__item">
+                <a href="" class="social__link footer-icon-bg">
+                  <svg class="social__icon">
+                    <use
+                      href="./images/icons.svg#icon-twitter"
+                      width="20"
+                      height="20"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link footer-icon-bg">
+                  <svg class="social__icon">
+                    <use
+                      href="./images/icons.svg#icon-facebook"
+                      width="20"
+                      height="20"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link footer-icon-bg">
+                  <svg class="social__icon">
+                    <use
+                      href="./images/icons.svg#icon-linkedin"
+                      width="20"
+                      height="20"
+                    ></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer-join">
-          <h3 class="footer-join__text">присоединяйтесь</h3>
-          <ul class="social list flex">
-            <li class="social__item">
-              <a href="" class="social__link footer-icon-bg">
-                <svg class="social__icon">
-                  <use
-                    href="./images/icons.svg#icon-instagram"
-                    width="20"
-                    height="20"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link footer-icon-bg">
-                <svg class="social__icon">
-                  <use
-                    href="./images/icons.svg#icon-twitter"
-                    width="20"
-                    height="20"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link footer-icon-bg">
-                <svg class="social__icon">
-                  <use
-                    href="./images/icons.svg#icon-facebook"
-                    width="20"
-                    height="20"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link footer-icon-bg">
-                <svg class="social__icon">
-                  <use
-                    href="./images/icons.svg#icon-linkedin"
-                    width="20"
-                    height="20"
-                  ></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <!-- Подпишитесь на рассылку -->
         <div class="sign-us">

@@ -1,6 +1,10 @@
 .section__what-we-do{
 
   display: none;
+
+  @media screen and(min-width: 1200px) {
+    display: block;
+  }
 }
 
 .what-we-do {
@@ -44,7 +48,7 @@
     }
   }
   
-  .title {
+  .what-we-do__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;

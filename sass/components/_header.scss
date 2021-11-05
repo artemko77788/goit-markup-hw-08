@@ -4,6 +4,11 @@
   @media screen and (min-width: 768px) {
     margin: 0;
     display: flex;
+    margin-right: 84px;
+  }
+  @media screen and (min-width: 1200px){
+    margin-right: 305px;
+
   }
 
   .main-nav__link {
@@ -31,8 +36,8 @@
   .main-nav__item {
     position: relative;
     @media screen and (min-width: 768px) {
+      padding: 32px 0;
       
-    
     }
   }
 
@@ -40,7 +45,8 @@
     margin-bottom: 32px;
 
     @media screen and (min-width: 768px) {
-      margin: 0;
+      margin-bottom: 0;
+      margin-right: 50px;
     }
   }
 
@@ -71,10 +77,26 @@
 
 .connect-header {
   margin-bottom: 64px;
+
   @media screen and (min-width: 768px) {
     margin: 0;
     flex-direction: column-reverse;
     display: flex;
+    justify-content: space-between;
+    padding: 21px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: unset;
+    padding: 0;
+    align-items: center;
+    flex-flow: row-reverse;
+  }
+
+  .connect-header__item:last-child{
+    @media screen and (min-width: 1200px) {
+      margin-right: 50px;
+    }
   }
 
   .connect-header__link {
@@ -87,14 +109,16 @@
     transition: color $duration $duration;
 
     @media screen and (min-width: 768px) {
-      font-size: 14px;
+      font-size: 12px;
       line-height: 1.14;
       display: flex;
-
+      align-items: center;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      padding: 32px 0;
     }
   }
-  
-
 
   .connect-header__link-blue {
     color: $accent-color;
@@ -118,15 +142,13 @@
   &__link:focus {
     color: $accent-color;
   }
-  
+
   .connect-header__item:not(:last-child) {
     margin-bottom: 32px;
-    
+
     @media screen and (min-width: 768px) {
       margin-bottom: 0;
     }
-
-
   }
 
   .connect-header__icon-mail {
@@ -141,7 +163,6 @@
 
     @media screen and(min-width: 768px) {
       display: block;
-
     }
   }
   .connect-header__icon-phone {
