@@ -615,6 +615,7 @@ ul {
 
 .modal .modal__item {
   margin-bottom: 4px;
+  display: block;
 }
 
 .modal .modal__icon {
