@@ -3,10 +3,22 @@
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
+  @media screen and(min-width: 1200px){
+    text-align: unset;
+  }
+  
+
 }
 
 .wrap-address {
     margin-bottom: 60px;
+
+
+  @media screen and(min-width: 1200px){
+    margin-bottom: 0;
+    margin-right: 70px;
+   
+  }
 
   
   
@@ -18,6 +30,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 
+   
     
   }
 
@@ -60,6 +73,7 @@
 }
 
 .sign-us {
+
    
 
 
@@ -90,6 +104,14 @@
     @media screen and(min-width: 768px){
       width: 450px;
     }
+
+    @media screen and(min-width: 1200px){
+      margin-bottom: 0;
+      margin-right: 12px;
+      width: 358px;
+
+    
+    }
   }
 
   .sign-us__btn {
@@ -115,5 +137,21 @@
     width: 24px;
     height: 24px;
     margin-left: 10px;
+  }
+  .sign-us__form{
+    @media screen and(min-width: 1200px){
+      display: flex;
+    }
+
+  }
+
+}
+
+
+.wrap-address-join-sign-us {
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+   
   }
 }

@@ -5,11 +5,12 @@
     margin: 0;
     display: flex;
     margin-right: 84px;
+   
   }
   @media screen and (min-width: 1200px){
     margin-right: 305px;
-
   }
+
 
   .main-nav__link {
     text-decoration: none;
@@ -25,6 +26,7 @@
     @media screen and (min-width: 768px) {
       font-size: 14px;
       line-height: 1.14;
+     
     }
   }
 
@@ -37,15 +39,15 @@
     position: relative;
     @media screen and (min-width: 768px) {
       padding: 32px 0;
-      
     }
   }
 
   .main-nav__item:not(:last-child) {
-    margin-bottom: 32px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 32px;
+    }
 
     @media screen and (min-width: 768px) {
-      margin-bottom: 0;
       margin-right: 50px;
     }
   }
@@ -93,7 +95,7 @@
     flex-flow: row-reverse;
   }
 
-  .connect-header__item:last-child{
+  .connect-header__item:last-child {
     @media screen and (min-width: 1200px) {
       margin-right: 50px;
     }

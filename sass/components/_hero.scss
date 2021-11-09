@@ -4,7 +4,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/hero-bg-image.jpg");
+    url("../images/hero-bg-image-phone.jpg");
   background-color: #2f303a;
 
   margin-left: auto;
@@ -17,14 +17,25 @@
   padding-top: 118px;
   padding-bottom: 118px;
 
+  @media screen and(min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero-bg-image-tablet.jpg");
+  }
+
   @media screen and(min-width: 1200px) {
     height: 600px;
     padding: 200px 0;
-    
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero-bg-image.jpg");
   }
- 
-
-  
 
   .hero__name {
     font-weight: 900;
@@ -38,18 +49,12 @@
     max-width: 360px;
     margin-left: auto;
     margin-right: auto;
-    
+
     @media screen and (min-width: 1200px) {
       font-size: 44px;
       line-height: 1.36;
       max-width: 696px;
-      
-     
-      
     }
-
-
-   
   }
 
   .hero__button {
@@ -66,8 +71,6 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
     transition: background-color $duration $cubic, box-shadow $duration $cubic;
-
-   
   }
 
   &__button:hover,
@@ -76,3 +79,27 @@
   }
 }
 
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/hero-bg-image-phone@2x.jpg");
+  }
+}
+@media screen and (max-width: 1199px) and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/hero-bg-image-tablet@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/hero-bg-image-2x.jpg");
+  }
+}
