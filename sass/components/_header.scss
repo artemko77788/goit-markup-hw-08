@@ -1,16 +1,12 @@
 .main-nav {
-  margin-bottom: 302px;
-
   @media screen and (min-width: 768px) {
     margin: 0;
     display: flex;
     margin-right: 84px;
-   
   }
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     margin-right: 305px;
   }
-
 
   .main-nav__link {
     text-decoration: none;
@@ -26,7 +22,6 @@
     @media screen and (min-width: 768px) {
       font-size: 14px;
       line-height: 1.14;
-     
     }
   }
 
@@ -110,11 +105,15 @@
     color: $secondery-text-color;
     transition: color $duration $duration;
 
+    @media screen and (max-width: 479px) {
+      font-size: calc(27px + 20 * ((100vw - 320px) / 480));
+    }
     @media screen and (min-width: 768px) {
       font-size: 12px;
       line-height: 1.14;
       display: flex;
       align-items: center;
+      display: inline-flex;
     }
     @media screen and (min-width: 1200px) {
       font-size: 14px;

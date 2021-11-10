@@ -3,8 +3,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-
 }
 
 .menu-button {
@@ -41,7 +39,6 @@
 }
 
 .menu-container {
-  
   z-index: 99;
   position: fixed;
   top: 0;
@@ -60,11 +57,7 @@
     width: unset;
     height: unset;
     display: flex;
-  
-
   }
-
-
 
   &.is-open {
     transform: translateX(0);
@@ -76,17 +69,21 @@
     margin-right: auto;
     margin-left: auto;
     padding: 48px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media screen and (max-width: 767px) {
+      height: 100vh;
+    }
 
-    @media screen and (min-width: 768px){
-    
+    @media screen and (min-width: 768px) {
       display: flex;
       margin: 0;
       max-width: 100%;
       padding: 0;
+      flex-direction: row;
     }
   }
-
- 
 }
 
 .menu-container__social-list {
@@ -99,6 +96,10 @@
 
     text-decoration: none;
     color: $accent-color;
+
+    @media screen and(max-width:479px) {
+      font-size: calc(12px + 18 * ((100vw - 320px) / 480));
+    }
   }
 
   .menu-container__social-item:not(:first-child)::before {
